@@ -1,0 +1,213 @@
+/*---------COMMON---------*/
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/*--------HEADER--------*/
+.header {
+    background-color: #e1ede6;
+    padding: 31px 0;   
+}
+
+.header__container{
+    display: flex; /*Включаем flexbox*/
+    justify-content: space-between; /*задаем выравнивание по основной оси - крайние по бокам, по центру - равномерно*/
+    flex-wrap: wrap; /*перенос flex-елемента на новую строку, если не помещается в размер*/
+    align-items: center; /*выравниваем по поперечной оси*/
+}
+
+.menu__list {
+    margin: 0;
+    list-style-type: none; /*Убираем маркеры для списка*/
+    display: flex; /*Включаем flexbox*/
+    justify-content: space-around; /*Устанавливаем равное расстояние между элементами и 0,5 от края*/
+    width: 100%;
+}
+
+.menu__item {
+    font-size: 20px;
+    color: #2c2d35;
+    margin-right: 60px;
+}
+
+
+/*---------MAIN----------*/
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__container_short {
+    padding: 0 15% 0 15%;
+}
+
+.main__container_full {
+    padding: 0 0 0 0;
+}
+
+.main__hero {
+    display: flex;
+    left: 705px;
+}
+
+.hero__img {
+    transform: scale(-1, 1);
+    max-width: 540px;
+    max-height: 620px;
+}
+
+.hero__content {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.hero__content h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.hero__content p {
+    font-size: 18px;
+    color:#86928b;
+}
+
+.hero__content button {
+    border: solid 1px;
+    border-color: #598d66;
+    color:#598d66;
+    background-color: white;
+    font-size: 20px;
+    padding: 20px 40px;
+    font-weight: 500;
+    min-width: 225px;
+    transition-duration: 0.5s;
+}
+
+.hero__content button:hover {
+    border-color: #fff;
+    color:white;
+    background-color: #598d66;
+    
+}
+
+.hero__content button:focus {
+    border-color: #598d66;
+    color:#598d66;
+    background-color: #d4e8d9;
+}
+.hero__content button:active {
+    border-color: #fff;
+    color:#fff;
+    background-color: #376b44;
+}
+
+.hero__content span{
+    color: #598d66;
+}
+
+.main__replica {
+    background-color:chocolate;
+    margin: 0 10% 0 10%;
+    display: flex;
+    left: 705px;
+}
+
+.main__novelty {
+    background-color:#598d66;
+    display: flex;
+    left: 705px;
+}
+
+.main__about {
+    /* загрушка БЭМ*/
+}
+
+
+
+
+
+
+/*--------FOOTER--------*/
+.footer{
+    background-color: #e1ede6;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 168px;
+}
+
+.footer_container {
+    display: inline;
+}
+.footer_common_info {
+   /* background-color: aqua;*/
+    float: left;
+}
+
+.footer_lists {
+  /* background-color: blue; */
+    display: flex;
+    float: left;
+    padding-left: 15%;
+}
+
+.footer_media_links{
+   /* background-color: antiquewhite;*/
+    float:right;
+}
+
+.footer_lists ul {
+    list-style-type: none;
+}
+
+.footer_container h1 {
+    font-size: 20px;
+    color: #2c2d35;
+    font-weight: 500;
+}
+
+.footer_container h2 {
+    font-size: 18px;
+    color: #86928b;
+    font-weight: 500;
+}
+
+.footer_media_links{
+   /* background-color: antiquewhite;*/
+    float:right;
+}
+.footer_social_media {
+    
+   /* background-color: brown;*/
+}
+
+.footer_social_media ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer_social_media li {
+    padding-right: 30px;
+    align-items: center;
+}
+
+.footer_rights {
+   /* background-color: darkorange;*/
+}
+
+.footer_rights p {
+    padding-left: 15%;
+    font-size: 12px;
+    color: #86928B;
+}
+
