@@ -120,6 +120,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .reproductions_header {
@@ -135,6 +136,8 @@ body {
 
 .reproductions_container__wrap {
   flex-wrap: wrap;
+  justify-content: left;
+  gap: 30px;
 }
 
 .reproductions_title {
@@ -192,7 +195,6 @@ body {
 
 .reproductions_card {
   box-sizing: border-box;
-  margin: 0 0px 30px 0px;
   padding: 20px;
   background-color: #e1ede6;
   width: 350px;
